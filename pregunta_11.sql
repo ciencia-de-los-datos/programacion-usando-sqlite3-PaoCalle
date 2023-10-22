@@ -37,4 +37,5 @@
 --  0  2018     6
 --
 --  >>> Escriba su codigo a partir de este punto <<<
--- 
+-- sel
+SELECT COUNT(*) FROM tbl1 WHERE STRFTIME('%Y',C14)='2018'; 
