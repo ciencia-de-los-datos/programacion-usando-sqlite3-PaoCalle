@@ -36,11 +36,11 @@
 --  Rta/
 --  K0    avg(c21)
 --  0  A  593.495000
---  1  B  575.470000
+--  1  B  575.470000 
 --  2  C  530.753000
 --  3  D  655.612500
 --  4  E  555.323077
 --
 --  >>> Escriba su codigo a partir de este punto <<<
---  
-
+--  sel
+SELECT t1.K0 AS 'K0', AVG(t2.c21) AS 'avg(c21)' FROM tbl1 t1 INNER JOIN tbl2 t2 ON (t1.K1=t2.K1) WHERE t1.c13>400 GROUP BY 1; 
